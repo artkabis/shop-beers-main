@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, Ubuntu, Roboto, Oxygen, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #333;
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 5rem;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: black;
+  padding: 15px 30px;
+  width: 100%;
+}
+.navbar .container > a {
+  font-size: 3rem;
+  width: 15%;
+}
+.navbar .container .navbar-collapse {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  align-items: center;
+}
+.navbar .container .navbar-collapse .navbar-nav {
+  display: flex;
+  width: 75%;
+  justify-content: center;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .link {
+  padding: 0 10px;
+  list-style: none;
+}
+.containerPanier {
+  display: flex;
+  align-items: center;
+}
+.containerImg img {
+  display: flex;
+}
+
+/**** cart bag ***/
+
+.containerAddToCart {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background: #3f6995;
+  margin-top: 30px;
+  line-height: 60px;
+  font-size: 2.3rem;
+}
+#cart {
+  display: block;
+  margin-top: 0;
+  height: 30px;
+  width: 21px;
+  font-weight: 100;
+  border-width: 1px 0 1px 1px;
+  border-style: solid;
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  margin-right: 35px;
+  -webkit-transform: skewX(-6deg) translateY(-50%);
+  transform: skewX(-6deg) translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+#cart:after {
+  content: '';
+  height: 28px;
+  width: 10px;
+  border-width: 1px 1px 1px 0;
+  border-style: solid;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  right: -9px;
+  bottom: -2px;
+  -webkit-transform: skewX(12deg);
+  transform: skewX(12deg);
+  border-color: #fff;
+}
+#cart span {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 29px;
+  line-height: 18px;
+  text-align: center;
+  z-index: 10;
+  -moz-transform: skewX(6deg);
+  -webkit-transform: skewX(6deg);
+  -o-transform: skewX(6deg);
+  -ms-transform: skewX(6deg);
+  transform: skewX(6deg);
+}
+#cart em {
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  display: block;
+  left: 4px;
+  top: -16px;
+  position: absolute;
+  -webkit-transform: skewX(6deg);
+  transform: skewX(6deg);
+}
+#cart em:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  border-width: 2px;
+  border-style: solid;
+  display: block;
+  border-radius: 0px;
+  border-color: #fff;
+}
